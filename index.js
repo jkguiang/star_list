@@ -43,8 +43,6 @@ function load_page() {
 
     page_loads += 1;
     filter();
-    console.log(indexMap["search"]);
-    console.log(page_loads);
 
     $.getJSON("database.json", function(data) {
         var to_append = ""; // to store string of html to append to ul
@@ -52,7 +50,6 @@ function load_page() {
         div.html(""); // clear all html contained by <div></div>
         search = indexMap["search"];
         $.each(data, function(key, val) {
-            console.log(val["name"].indexOf(search));
             if (val["name"].indexOf(search) >= 0) {
                 var html_name = highlight_search(val["name"]);
 
