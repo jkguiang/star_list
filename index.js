@@ -49,8 +49,10 @@ function load_page() {
         var div = $("#main_list"); // points to the 'div' (division) html element
         div.html(""); // clear all html contained by <div></div>
         search = indexMap["search"];
+        var results_exist = false;
         $.each(data, function(key, val) {
             if (val["name"].indexOf(search) >= 0) {
+                results_exist = true;
                 var html_name = highlight_search(val["name"]);
 
                 to_append += "<div class'container' id='"+key+"'><hr><p><h4>"+html_name+
@@ -59,6 +61,9 @@ function load_page() {
                              "<br /><b>Filter: </b>"+val["filter"]+"</p><hr></div>";
             }
         });
+        if (results_exist == false) {
+            div.append("<div class='container text-center'><p>No entries matching '"+search+"' exist.</p></div>")
+        }
         div.append(to_append);
     });
 
