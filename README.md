@@ -12,5 +12,5 @@ Hosted here: http://uaf-8.t2.ucsd.edu/~jguiang/dump/list_example/#
     - uses: [Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/), [jQuery](https://jquery.com/)
 5. `index.js`
     - dynamic aspects of the page (i.e. generates list from JSON, handles "search" functionality)
-6. mk_json.py
+6. `mk_json.py`
     - generates a randomly-seeded JSON with pseudo data to simulate actual database
