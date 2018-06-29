@@ -8,7 +8,7 @@ Hosted here: http://uaf-8.t2.ucsd.edu/~jguiang/dump/list_example/#
 3. `galaxy.jpg`
     - background image, found [here](https://en.wikipedia.org/wiki/Galaxy#/media/File:M82_HST_ACS_2006-14-a-large_web.jpg)
 4. `index.html`
-    - static aspects of the page (i.e. Main title, links to CSS and other JS dependencies, etc.)
+    - static aspects of the page (i.e. main title, links to CSS and other JS dependencies, etc.)
     - uses: [Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/), [jQuery](https://jquery.com/)
 5. `index.js`
     - dynamic aspects of the page (i.e. generates list from JSON, handles "search" functionality)
