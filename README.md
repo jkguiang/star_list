@@ -1,6 +1,6 @@
 Hosted here: http://uaf-8.t2.ucsd.edu/~jguiang/dump/list_example/#
 
-#### Scripts:
+#### Files:
 1. `database.json`
     - JSON that maps star data/metadata to corresponding files
 2. `favicon.ico`
