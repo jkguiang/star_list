@@ -42,8 +42,10 @@ def ls(db):
 def h():
     print("""
 
-            To use this tool, simply enter the name of the target you wish to search for in the database.
-            Some useful commands are listed below.
+            To use this tool, simply enter the name of the target you wish to search for in the database
+            then hit 'Enter.'
+
+            Some other useful commands are listed below.
 
             Commands:
             ls -> print database
