@@ -3,7 +3,6 @@ import json
 import os
 
 import pprint
-from tqdm import tqdm
 
 def load_db():
     db = {}
@@ -12,7 +11,7 @@ def load_db():
 
     jsons = os.listdir("{0}/db".format(os.getcwd()))
 
-    for j in tqdm(jsons):
+    for j in jsons:
         print("Processing {0}".format(j))
         json_data = {}
         with open("{0}/db/{1}".format(os.getcwd(), j)) as fin:
